@@ -1,1 +1,5 @@
 # frida-scripts
+
+Bruhh
+
+## Hi
