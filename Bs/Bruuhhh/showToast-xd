@@ -1,0 +1,10 @@
+function showToast() {	
+	Java.perform(function() { 
+		var context = Java.use('android.app.ActivityThread').currentApplication().getApplicationContext();
+
+		Java.scheduleOnMainThread(function() {
+				var toast = Java.use("android.widget.Toast");
+				toast.makeText(context, Java.use("java.lang.String").$new("your text"), 1).show();
+		});
+	});
+}
