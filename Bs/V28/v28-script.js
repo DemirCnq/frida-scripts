@@ -222,7 +222,7 @@ function OfflineBattles() {
 		    }
      	});
 
-         Interceptor.attach(base.add(0xC1C50C), {
+         Interceptor.attach(cache.base.add(0xC1C50C), {
 	           onLeave(retval) { 
 		          retval.replace(ptr(10));
 	           } 
