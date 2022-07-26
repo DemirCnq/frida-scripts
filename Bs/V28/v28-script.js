@@ -206,7 +206,7 @@ function setup() {
         onEnter: function(args) {
             if (ntohs(Memory.readU16(args[1].add(2))) === 9339) {
                 cache.fd = args[0].toInt32();
-                var host = Memory.allocUtf8String("192.168.1.109");
+                var host = Memory.allocUtf8String("127.0.0.1");
                 Memory.writeInt(args[1].add(4), inet_addr(host));
                 Memory.writeU16(args[1].add(2), ntohs(parseInt(9339)));
                 setupMessaging();
