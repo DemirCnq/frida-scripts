@@ -1,5 +1,6 @@
 # frida-scripts
 
-Bruhh
+Scripts are not mine
 
-## Hi
+
+## Fяida
